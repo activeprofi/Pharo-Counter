@@ -5,18 +5,18 @@ Class {
 }
 
 { #category : #tests }
-CounterTest >> tesDecrement [
-	| counter |
-	counter := Counter new count: 5.
-	counter decrement; decrement.
-	self assert: counter count equals: 3
-]
-
-{ #category : #tests }
 CounterTest >> testCountIsSetAndRead [
 	| counter |
 	counter := Counter new count: 5.
 	self assert: counter count equals: 5
+]
+
+{ #category : #tests }
+CounterTest >> testDecrement [
+	| counter |
+	counter := Counter new count: 5.
+	counter decrement; decrement.
+	self assert: counter count equals: 3
 ]
 
 { #category : #tests }
