@@ -26,3 +26,8 @@ CounterTest >> testIncrement [
 	counter increment; increment.
 	self assert: counter count equals: 3
 ]
+
+{ #category : #tests }
+CounterTest >> testInitialize [
+	self assert: Counter new count equals: 0
+]
